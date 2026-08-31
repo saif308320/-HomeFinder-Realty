@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Listings — HomeFinder Realty</title>
+<meta name="description" content="Browse current homes for sale and to let across Chelsea, Fulham and Battersea with HomeFinder Realty.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <span class="mark">HF</span>
+      <span class="name">Home<b>Finder</b> Realty</span>
+    </a>
+    <nav class="main-nav" aria-label="Primary">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="listings.html" aria-current="page">Listings</a></li>
+        <li><a href="agents.html">Agents</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <a class="phone" href="tel:+442034567890">+44 20 3456 7890</a>
+      <a class="btn btn-primary" href="contact.html">Book a valuation</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- ================= PAGE HEADER ================= -->
+<section class="page-header">
+  <div class="container">
+    <p class="breadcrumb"><a href="index.html">Home</a> / Listings</p>
+    <p class="eyebrow">Listings</p>
+    <h1>Every home currently on our books</h1>
+    <p>Filter by type, area, bedrooms or budget — the list updates as you go, no page reload needed.</p>
+  </div>
+</section>
+
+<!-- ================= LISTINGS ================= -->
+<section class="section">
+  <div class="container">
+
+    <form class="filter-bar" onsubmit="return false;">
+      <div class="field">
+        <label for="filter-type">Type</label>
+        <select id="filter-type">
+          <option value="all">All types</option>
+          <option value="sale">For sale</option>
+          <option value="let">To let</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="filter-location">Area</label>
+        <select id="filter-location">
+          <option value="all">All areas</option>
+          <option value="chelsea">Chelsea</option>
+          <option value="fulham">Fulham</option>
+          <option value="battersea">Battersea</option>
+          <option value="kensington">Kensington</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="filter-beds">Min. bedrooms</label>
+        <select id="filter-beds">
+          <option value="all">Any</option>
+          <option value="1">1+</option>
+          <option value="2">2+</option>
+          <option value="3">3+</option>
+          <option value="4">4+</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="filter-price">Max. price</label>
+        <select id="filter-price">
+          <option value="all">Any budget</option>
+          <option value="800000">Up to £800,000</option>
+          <option value="1500000">Up to £1,500,000</option>
+          <option value="2500000">Up to £2,500,000</option>
+          <option value="5000000">Up to £5,000,000</option>
+        </select>
+      </div>
+      <a href="#" class="btn btn-ghost filter-reset">Reset</a>
+    </form>
+
+    <p class="results-count">9 properties found — also listed on Rightmove and Zoopla, usually a day after they appear here first.</p>
+
+    <div class="grid-cards">
+
+      <article class="card reveal" data-card data-type="sale" data-location="chelsea" data-beds="4" data-price="2450000">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Georgian townhouse on a tree-lined Chelsea street">
+          <span class="card-tag">For sale</span>
+          <div class="card-badges"><span class="chip">EPC: C</span><span class="chip">Chain-free</span></div>
+          <span class="card-price">£2,450,000</span>
+        </div>
+        <div class="card-body">
+          <h3>Chelsea Garden Townhouse</h3>
+          <p class="card-loc">Tite Street, Chelsea, SW3</p>
+          <div class="card-meta"><span>4 beds</span><span>3 baths</span><span>2,150 sq ft</span></div>
+        </div>
+      </article>
+
+      <article class="card reveal" data-card data-type="sale" data-location="battersea" data-beds="2" data-price="1180000">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=800&q=80" alt="Bright open-plan living room with large windows">
+          <span class="card-tag">For sale</span>
+          <div class="card-badges"><span class="chip">EPC: B</span></div>
+          <span class="card-price">£1,180,000</span>
+        </div>
+        <div class="card-body">
+          <h3>Riverside Two-Bed Apartment</h3>
+          <p class="card-loc">Battersea Reach, SW11</p>
+          <div class="card-meta"><span>2 beds</span><span>2 baths</span><span>980 sq ft</span></div>
+        </div>
+      </article>
+
+      <article class="card reveal" data-card data-type="let" data-location="fulham" data-beds="3" data-price="3850">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" alt="Modern family house with landscaped front garden">
+          <span class="card-tag">To let</span>
+          <div class="card-badges"><span class="chip">EPC: C</span><span class="chip">Unfurnished</span></div>
+          <span class="card-price">£3,850 pcm</span>
+        </div>
+        <div class="card-body">
+          <h3>Fulham Family House</h3>
+          <p class="card-loc">Peterborough Road, SW6</p>
+          <div class="card-meta"><span>3 beds</span><span>2 baths</span><span>1,340 sq ft</span></div>
+        </div>
+      </article>
+
+      <article class="card reveal" data-card data-type="sale" data-location="kensington" data-beds="3" data-price="1950000">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80" alt="Elegant white stucco-fronted period building">
+          <span class="card-tag">For sale</span>
+          <div class="card-badges"><span class="chip">EPC: D</span></div>
+          <span class="card-price">£1,950,000</span>
+        </div>
+        <div class="card-body">
+          <h3>Kensington Period Conversion</h3>
+          <p class="card-loc">Pembroke Square, W8</p>
+          <div class="card-meta"><span>3 beds</span><span>2 baths</span><span>1,510 sq ft</span></div>
+        </div>
+      </article>
+
+      <article class="card reveal" data-card data-type="let" data-location="chelsea" data-beds="1" data-price="2600">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=800&q=80" alt="Compact stylish studio living space">
+          <span class="card-tag">To let</span>
+          <div class="card-badges"><span class="chip">EPC: C</span><span class="chip">Furnished</span></div>
+          <span class="card-price">£2,600 pcm</span>
+        </div>
+        <div class="card-body">
+          <h3>Chelsea Mews Studio</h3>
+          <p class="card-loc">Elystan Mews, SW3</p>
+          <div class="card-meta"><span>1 bed</span><span>1 bath</span><span>520 sq ft</span></div>
+        </div>
+      </article>
+
+      <article class="card reveal" data-card data-type="sale" data-location="fulham" data-beds="5" data-price="3200000">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1613977257363-707ba9348227?auto=format&fit=crop&w=800&q=80" alt="Large detached house with driveway">
+          <span class="card-tag">For sale</span>
+          <div class="card-badges"><span class="chip">EPC: B</span><span class="chip">Chain-free</span></div>
+          <span class="card-price">£3,200,000</span>
+        </div>
+        <div class="card-body">
+          <h3>Bishops Park Villa</h3>
+          <p class="card-loc">Bishops Avenue, SW6</p>
+          <div class="card-meta"><span>5 beds</span><span>4 baths</span><span>3,020 sq ft</span></div>
+        </div>
+      </article>
+
+      <article class="card reveal" data-card data-type="let" data-location="battersea" data-beds="2" data-price="3100">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=800&q=80" alt="Warm contemporary interior with wooden floors">
+          <span class="card-tag">To let</span>
+          <div class="card-badges"><span class="chip">EPC: C</span></div>
+          <span class="card-price">£3,100 pcm</span>
+        </div>
+        <div class="card-body">
+          <h3>Battersea Park Apartment</h3>
+          <p class="card-loc">Prince of Wales Drive, SW11</p>
+          <div class="card-meta"><span>2 beds</span><span>1 bath</span><span>860 sq ft</span></div>
+        </div>
+      </article>
+
+      <article class="card reveal" data-card data-type="sale" data-location="chelsea" data-beds="2" data-price="1350000">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?auto=format&fit=crop&w=800&q=80" alt="Redbrick mansion block apartment building">
+          <span class="card-tag">For sale</span>
+          <div class="card-badges"><span class="chip">EPC: D</span></div>
+          <span class="card-price">£1,350,000</span>
+        </div>
+        <div class="card-body">
+          <h3>Cadogan Mansion Flat</h3>
+          <p class="card-loc">Cadogan Square, SW1X</p>
+          <div class="card-meta"><span>2 beds</span><span>2 baths</span><span>1,020 sq ft</span></div>
+        </div>
+      </article>
+
+      <article class="card reveal" data-card data-type="sale" data-location="kensington" data-beds="4" data-price="2850000">
+        <div class="card-media">
+          <img src="https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80" alt="Grand townhouse with white pillars and steps">
+          <span class="card-tag">For sale</span>
+          <div class="card-badges"><span class="chip">EPC: C</span><span class="chip">Chain-free</span></div>
+          <span class="card-price">£2,850,000</span>
+        </div>
+        <div class="card-body">
+          <h3>Holland Park Townhouse</h3>
+          <p class="card-loc">Addison Road, W14</p>
+          <div class="card-meta"><span>4 beds</span><span>3 baths</span><span>2,480 sq ft</span></div>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="no-results">
+      <p>No properties match those filters yet — try widening your budget or area, or <a href="contact.html">tell us what you're after</a> and we'll get in touch when something fits.</p>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= CTA BAND ================= -->
+<section class="cta-band">
+  <div class="container reveal">
+    <h2>Can't see the right home?</h2>
+    <p>New instructions come in every week and some never make it online. Tell us your brief and we'll email you first.</p>
+    <div class="btn-group">
+      <a href="contact.html" class="btn btn-primary">Register your search</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <span class="mark">HF</span>
+          <span class="name">Home<b>Finder</b> Realty</span>
+        </a>
+        <p>An independent estate agency in Chelsea, finding considered homes for buyers, sellers and tenants across London.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="listings.html">Listings</a></li>
+          <li><a href="agents.html">Agents</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="contact.html">Sell your home</a></li>
+          <li><a href="contact.html">Let your property</a></li>
+          <li><a href="listings.html">Buy a home</a></li>
+          <li><a href="contact.html">Free valuation</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Visit us</h4>
+        <address>
+          12 King's Road, Chelsea<br>
+          London, SW3 4TY, UK<br><br>
+          <a href="tel:+442034567890">+44 20 3456 7890</a><br>
+          <a href="mailto:info@homefinderrealty.co.uk">info@homefinderrealty.co.uk</a>
+        </address>
+      </div>
+    </div>
+    <p class="legal-strip">HomeFinder Realty Ltd is registered in England &amp; Wales, company no. 08234671. Registered office: 12 King's Road, Chelsea, London, SW3 4TY. VAT no. GB 456 7890 12. A member of Propertymark and The Property Ombudsman scheme; client money held under Client Money Protect.</p>
+    <div class="footer-bottom">
+      <span>© <span data-year></span> HomeFinder Realty Ltd. All rights reserved.</span>
+      <div class="social-row">
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="8" y1="11" x2="8" y2="16"/><line x1="8" y1="8" x2="8" y2="8"/><line x1="12" y1="11" x2="12" y2="16"/><path d="M12 13c0-1.2 1-2 2.5-2s2.5.8 2.5 2v3"/></svg></a>
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M15 8h-2a2 2 0 0 0-2 2v2H9v3h2v6h3v-6h2.2l.8-3H14v-1.5a.5.5 0 0 1 .5-.5H16V8z"/></svg></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
